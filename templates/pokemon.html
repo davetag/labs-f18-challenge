@@ -10,9 +10,6 @@
 
 	</head>
 	<body>
-		{{ query}}
-		{{ response.id}}
-
 		{% if query|string() == response.id|string() %}
 			<h1> the pokemon with id {{response.id}} is {{response.name}}</h1>
 		{% else %}
